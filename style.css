@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: rgb(232, 9, 105);
+  --clr-dark: #303030;
+  --clr-light: #666464;
+  --clr-bg: rgb(219, 217, 217);
+}
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+
+.player {
+  margin: 0 auto;
+  max-width: 480px;
+  /* background-color: rgba(255, 0, 212, 0.25); */
+  box-shadow: 0 0 5px #ccc;
+  background-color: rgba(232, 9, 105, 0.1);
+  min-height: 700px;
+  align-items: center;
+}
+
+.dashboard {
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 480px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+header h4 {
+  text-align: center;
+  margin: 0 0 5px;
+  color: var(--clr-primary);
+}
+
+header h2 {
+  text-align: center;
+  margin: 5px 0 12px;
+  font-size: 1.2rem;
+}
+
+.cd {
+  text-align: center;
+}
+.cd-img {
+  width: 230px;
+  border-radius: 50%;
+}
+.control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
+
+.btn {
+  background-color: white;
+  font-size: 1.3rem;
+  color: var(--clr-light);
+}
+.player .btn-play {
+  color: var(--clr-primary);
+  font-size: 3rem;
+}
+
+.playing .btn-play__inactive {
+  display: flex;
+}
+
+.playing .btn-play__active {
+  display: none;
+}
+.btn-play__inactive {
+  display: none;
+}
+
+.progress {
+  width: 100%;
+}
+.playlist {
+  margin-top: 405px;
+  padding: 10px;
+}
+
+.song {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.thum {
+  width: 15%;
+  margin-left: 12px;
+  flex: 1;
+}
+.thum-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.song .body {
+  margin-left: 20px;
+  flex: 6;
+}
+
+.option {
+  flex: 0.5;
+}
+
+.author {
+  line-height: 2rem;
+  font-weight: 700;
+}
+.singer-name {
+  font-weight: 500;
+}
+
+.active {
+  color: var(--clr-primary);
+}
+
+.song.active {
+  background-color: var(--clr-primary);
+}
+
+.song.active .author {
+  color: white;
+}
+
+.song.active .singer-name {
+  color: white;
+}
+
+.song.active .option {
+  color: white;
+}
+
+.song:active {
+  opacity: 0.7;
+}

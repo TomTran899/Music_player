@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+                <!-- Header -->
+                <header>
+                    <h4>Now playing</h4>
+                    <h2>String 57th & 9th</h2>
+                </header>
+
+                <!-- CD -->
+                <div class="cd">
+                    <img src="./img/As_if_its_your_last.jpg" alt="" class="cd-img">
+                </div>
+            
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn-play">
+                    <div class="btn-play__active">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                    <div class="btn-play__inactive">
+                        <i class="fa-solid fa-circle-pause"></i>
+                    </div>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <input id="progress" type="range" class="progress" value="0" step="1" min="0" max="100">
+
+            <audio src="" class="" id="audio"></audio>
+        </div>
+        <!-- Play list -->
+        <div class="playlist">
+           
+        </div>
+    </div>
+    <script src="./modify.js"></script>
+</body>
+</html>
